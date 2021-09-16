@@ -1,0 +1,19 @@
+body{
+    font-family:  'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./img/macos_sierra_stock_mountains_4k-1920x1200.jpg);
+    backdrop-filter: blur(4px);
+}
+#title{
+    font-size: 40px;
+}
+#description{
+    font-size: 25px;
+    margin-left: 40px;
+}
+#survey-form{
+    font-size: 25px;
+}

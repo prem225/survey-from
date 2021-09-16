@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC : Survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">KoolMechanics Form</h1>
+        <p id="description">Application for Recruitment</p>
+    </div>
+    <form id="survey-form">
+        <!--name-->
+        <div class="name">
+            <label id="name-label">Name</label>
+            <input
+            type="name"
+            id="name"
+            placeholder="Enter your name"
+            name="name">
+        </div>
+        <div class="email">
+            <!--email-->
+            <label id="email-label">E-mail</label>
+            <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            name="email">
+        </div>
+        <div class="age">
+            <!--age-->
+            <label id="number-label">Age<i>(optional)</i></label>
+            <input
+            type="number"
+            id="number"
+            placeholder="Enter your age"
+            min="18"
+            max="70"
+            name="age">
+        </div>
+        <div class="role">
+            <!--role-->
+            <label id="role-label">Which role are you looking for?</i></label>
+            <select id="dropdown" name="role" class="form-control" required>
+            <option value="select" disabled selected value>Select your role</option>
+            <option value="digital-market">Digital Marketing</option>
+            <option value="web-dev">Web Developement</option>
+            <option value="finance">Finance</option>
+            <option value="consult">Consultant</option>
+        </select>
+        </div>
+        <div class="recommend">
+            <!--recommend-->
+            <p>Would you recommend KoolMechanics to a friend?</p>
+            <label><input name="user-recommend" type="radio" value="Yup">Hell yeah!</label>
+            <label><input name="user-recommend" type="radio" value="meh">Meh</label>
+            <label><input name="user-recommend" type="radio" value="nope">Nope</label>
+        </div>
+        <div class="comment">
+            <!--comment-->
+            <p>Something to say?</p>
+            <textarea 
+            id="comment"
+            name="comment"
+            placeholder="Any Suggestions..."></textarea>
+        </div>
+        <div class="button">
+            <!--button-->
+            <button type="submit" id="submit">Here you go!</button>
+        </div>
+    </form>
+</body>
+</html>
